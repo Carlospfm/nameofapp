@@ -1,3 +1,49 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ 
+body {
+    font-family: Verdana, sans-serif;
+    background-size:cover;
+    position: relative;
+    background: image-url('skulls.png'); 
+}
+
+nav  {
+	font-family: verdana;
+	font-size: 1.3em;
+	background-color: #FC4A1A;
+}
+
+.navbar-brand {
+	font-size: 1.3em;
+	
+}
+
+h1 {
+	color: #F7B733;
+}
+
+a {
+	padding-left: 15px;
+	color: #4ABDAC;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+  color: white;
+}
+
+.container {
+	padding-top: 66px;
+}
+
+.img-responsive {
+	position: center;
+	 max-width: 400px
+}
+
+footer {
+	padding-top: 20px;
+}
