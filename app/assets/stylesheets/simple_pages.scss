@@ -22,11 +22,12 @@ nav  {
 
 h1 {
 	color: #F7B733;
+	padding-top: 30px;
 }
 
 a {
 	padding-left: 15px;
-	color: #4ABDAC;
+	color: #2f5f58;
 	text-decoration: none;
 }
 
@@ -41,9 +42,13 @@ a:hover {
 
 .img-responsive {
 	position: center;
-	 max-width: 400px
+	max-width: 100%;
 }
 
 footer {
-	padding-top: 20px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	background-color: #F7B733;
+	margin-top: 40px;
 }
+
