@@ -12,8 +12,6 @@ body {
   background-size:cover;
   position: relative;
   background: image-url('skulls.png'); 
-  margin: 0 0 100px;
-  /* bottom = footer height */
   padding: 25px;
 }
 
@@ -53,15 +51,19 @@ a:hover {
 }
 
 footer {
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-bottom: 10px;
+	padding-left: 40px;
 	background-color: #F7B733;
-	margin-top: 40px;
 	position: absolute;
-	width: 100%
-	bottom: 0;
-  height: 100px;
+	width: 100%;
+	left: 0;
   overflow: hidden;
+  margin-top: 40px;
+}
+
+.active {
+	color: white;
 }
 
 
