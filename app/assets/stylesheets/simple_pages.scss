@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
  
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
   font-family: Verdana, sans-serif;
   background-size:cover;
@@ -49,5 +54,6 @@ footer {
 	padding-bottom: 10px;
 	background-color: #F7B733;
 	margin-top: 40px;
+	position: absolute;
 }
 
