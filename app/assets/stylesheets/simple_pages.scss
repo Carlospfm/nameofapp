@@ -12,7 +12,7 @@ body {
   background-size:cover;
   position: relative;
   background: image-url('skulls.png'); 
-  padding: 25px;
+  padding: 0, 25px, 25px, 25px;
 }
 
 nav  {
@@ -27,8 +27,7 @@ nav  {
 
 h1 {
 	color: #F7B733;
-	padding-top: 30px;
-}
+	}
 
 a {
 	padding-left: 15px;
@@ -42,7 +41,7 @@ a:hover {
 }
 
 .container {
-	padding-top: 66px;
+	padding-top: 40px;
 }
 
 .img-responsive {
