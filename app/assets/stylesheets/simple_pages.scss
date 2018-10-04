@@ -10,7 +10,6 @@ html {
 body {
   font-family: Verdana, sans-serif;
   background-size:cover;
-  position: relative;
   background: image-url('skulls.png'); 
   padding: 0, 25px, 25px, 25px;
 }
@@ -56,6 +55,7 @@ footer {
 	background-color: #F7B733;
 	position: absolute;
 	width: 100%;
+	bottom: 0;
 	left: 0;
   overflow: hidden;
   margin-top: 40px;
