@@ -3,6 +3,6 @@ class SimplePagesController < ApplicationController
     @featured_product = Product.first
   end
   
-  def index
+def index
   end
 end
