@@ -1,0 +1,42 @@
+.carousel-caption{
+	font-family: verdana;
+	font-size: 3.3em;
+	color: #FC4A1A;
+	font-weight: 900;
+}	
+
+.carousel-item {
+	text-align: center;
+	width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #F7B733;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #F7B733;
+}
+
+.carousel-indicators li {
+ 	background-color: #F7B733;
+ }
+
+ .carousel-indicators .active {
+ 	background-color: #FC4A1A;
+ }

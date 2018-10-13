@@ -5,22 +5,11 @@
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-sm-6 col-md-4">
-        <div  class="productgallery-image"><%= image_tag(product.image_url, class: "img-fluid") %></div>
-        <div class="productgallery-info">
-          <a href="#"><h2><%= product.name %></h2></a>
-          <p><%= product.description %></p>
-          <p><%= product.colour %></p>
-          <p><%= product.price %></p>
-        </div>
-        </td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </div>
+      <%= render @products %>
     <% end %>
   </div>
+  <%= link_to 'New Product', new_product_path %>
 </div>
+</br>
 
 
-<br>
-
-<%= link_to 'New Product', new_product_path %>
