@@ -16,36 +16,10 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" role="navigation" id="navbar-example">
-      <a class="navbar-brand"><%= link_to "Berbi", root_path, :class => current_class?(root_path) %></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <%= link_to "Products", products_path, :class => current_class?(products_path)%>
-          </li>
-          <li class="nav-item">
-            <%= link_to "About", simple_pages_about_path, :class => current_class?(simple_pages_about_path) %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Contact", simple_pages_contact_path, :class => current_class?(simple_pages_contact_path)%>
-          </li>
-        </ul>
-      </div>
-    </nav> <!-- end nav -->
-
+    <%= render 'layouts/navigation' %>
     <div class="container">
-
       <%= yield %>
-
     </div>
-
-    <footer>
-      &copy; 2018 BerBi
-    </footer>
-    
+    <%= render 'layouts/footer' %>
   </body>
 </html>
