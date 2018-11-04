@@ -24,6 +24,35 @@ nav  {
 	font-size: 1.3em;
 }
 
+.navbar-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& input,
+	.btn {
+		border: 1px solid rgb(240, 240, 240);
+	}
+	text-align: center;
+}
+
+.navbar-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& input,
+	.btn {
+		border: 1px solid rgb(240, 240, 240);
+	}
+	text-align: center;
+}
+
+.navbar-form > * {
+	margin: 0 0.5vw;
+	text-align: center;
+}
+
 h1 {
 	color: #F7B733;
 	}
@@ -40,7 +69,7 @@ a:hover {
 }
 
 .container {
-	padding-top: 40px;
+	padding-top: 60px;
 }
 
 .img-responsive {
