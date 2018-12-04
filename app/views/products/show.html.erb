@@ -3,7 +3,6 @@
   <section class="row">
     <div class="col-sm-6 img">
       <%= image_tag(@product.image_url, class: "img-fluid") %>
-      <div class="rating"></div>
     </div>
 
     <section class="col-sm-6 products-info">
@@ -34,6 +33,8 @@
       </p>
       <%= render 'new_comment' %>
       <%= render 'comments' %>
+      <%= will_paginate @comments %>
+
     </section>
     <!-- /col-sm-6 -->
   </section>
