@@ -4,24 +4,16 @@ describe Order do
 
   let(:product) {
 
-    Product.create!(
-      name: "Test order",
-      description: "test product",
+    Product.create!( name: "city bike",
+      description: "awesome citybike",
       image_url: "bike1.jpg",
     )
   }
 
-  let(:user) {User.create!(email: "test@gmail.com", password: "password")}
+  let(:user) {User.create!(email: "berbi@gmail.com", password: "secret")}
 
-  it "is a valid order" do
-    expect(Order.new( user: user, product: product, total: 100)).to be_valid
-  end
-
-  it "is not valid without a user" do
-    expect(Order.new( product: product, total: 100)).not_to be_valid
-  end
 
   it "is not valid without product" do
-    expect(Order.new( user: user, total: 100)).not_to be_valid
+    expect(Order.new( user: user, total: 10)).not_to be_valid
   end
 end
