@@ -1,16 +1,18 @@
 require 'rails_helper'
 
 describe OrdersController, type: :controller do
-
+  before do
+    @user = FactoryBot.create(:user)
+  end 
     let(:product) { Product.create!(name:"city bike", description:"I am fast", image_url:"about.overview_1.jpg" )}
-    let(:user) { User.create!(email: "berbi@mail.com", password: "secret")}
-    let(:order) { Order.create!(user: user, product: product, total: product.price) }
+    
+    let(:order) { Order.create!(user: @user, product: product, total: product.price) }
 
 
     describe 'GET #show' do
       context 'when a user is logged in' do
         before do
-          sign_in user
+          sign_in @user
         end
 
           it "loads correct the user's order details" do
