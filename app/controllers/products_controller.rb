@@ -8,7 +8,6 @@ class ProductsController < ApplicationController
       search_term = params[:q]
       @products = Product.search(search_term)
     else
-      byebug
       @products = Product.all
     end
   end 
