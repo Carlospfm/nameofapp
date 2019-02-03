@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
       search_term = params[:q]
       @products = Product.search(search_term)
     else
+      byebug
       @products = Product.all
     end
   end 
@@ -75,6 +76,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :image_url, :colour, :price)
+      params.require(:product).permit(:name, :description, :image_url, :colour)
     end
 end
