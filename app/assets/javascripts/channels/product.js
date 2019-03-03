@@ -1,4 +1,4 @@
-App.product = App.cable.subscriptions.create("ProductChannel", {
+ App.product = App.cable.subscriptions.create("ProductChannel", {
   connected: function() {
     // Called when the subscription is ready for use on the server
   },
@@ -23,6 +23,8 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
 });
 
 $(document).on('turbolinks:load', function() {
-  App.product.listen_to_comments();
+  setTimeout(function() {
+    App.product.listen_to_comments();
+  }, 500);
 });
 
